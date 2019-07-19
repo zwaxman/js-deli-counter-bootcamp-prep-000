@@ -1,6 +1,9 @@
+var numCustomers=0;
+
 function takeANumber(line, name){
+  numCustomers+=1
   line.push(name);
-  return `Welcome, ${name}. You are number ${line.length} in line.`
+  return `Welcome you are ticket number ${numCustomers}, you are number ${line.length} in line.`
 }
 
 function nowServing(line){
